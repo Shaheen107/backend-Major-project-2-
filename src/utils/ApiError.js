@@ -3,7 +3,7 @@ class ApiError extends Error {   // Node Error class ko ham overWrite ker raha h
         statusCode,
         message= "Something went wrong",  // default error 
         errors=[],
-        statck="",
+        stack="",
     ){
         // overriding Error class method 
         super(message)     
@@ -12,8 +12,8 @@ class ApiError extends Error {   // Node Error class ko ham overWrite ker raha h
         this.message = message
         this.success = false
         this.errors = errors
-        if(statck){
-            this.stack = statck
+        if(stack){
+            this.stack = stack
         }else{
             Error.captureStackTrace(this, this.constructor)
         }

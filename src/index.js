@@ -1,8 +1,7 @@
 // require('dotenv').config({path: "./env"})   is se run tu ho jaya ga per yaha required aur ham import use ker raha hai jis se code ki terteb kharab hoti hai 
 import dotenv from "dotenv"
 import connectDB from "./db/index.js";
-import express from "express"
-const app = express();
+import {app} from "./app.js"
 
 dotenv.config({
     path: "./env"  // root directry per hi env file hai

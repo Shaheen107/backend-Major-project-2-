@@ -20,3 +20,4 @@ class ApiError extends Error {   // Node Error class ko ham overWrite ker raha h
     }
 }  
 
+export {ApiError}
